@@ -1,0 +1,311 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .app-header {
+        padding: 5px 0;
+    }
+    .default-title {
+        font-size: 30px;
+    }
+    .totop {
+        height: 45px;
+        width: 45px;
+        line-height: 45px;
+        font-size: 20px;
+    }
+ /* banner media css start */
+ .banner-area {
+	 padding-top: 30px;
+	padding-bottom: 15px;
+}
+.banner-caption {
+	padding: 30px 0px;
+    text-align: center;
+}
+.banner-caption h1 {
+	font-size: 32px;
+}
+.banner-faq p {
+	font-size: 14px;
+}
+.banner-img{
+    text-align: center !important;
+}
+/* banner media css end */
+/* brand logo media css start */
+.brand-logo {
+	padding: 40px 0;
+}
+.logo-img {
+	padding: 30px;
+	margin: 0px 20px;
+}
+/* brand logo media css end */
+
+/* jackpot media css start */
+.jackpot-right-text {
+	padding: 35px;
+}
+.jackpot-left-text {
+	width:100%;
+}
+.jackpot-left-text h1 {
+	font-size: 28px;
+	line-height: 39px;
+}
+.call-to-action {
+    padding: 0 !important;
+}
+.smart-service {
+	text-align: center;
+}
+.f-right-text {
+	margin-top: 50px;
+}
+
+/* choose media css start */
+.choose-item {
+	padding: 0px;
+}
+/* choose media css end */
+
+/* pricing media css start */
+.price-x-pad {
+	padding: 30px 0px;
+}
+.pricing-card .card {
+	margin-top: 30px;
+}
+/* pricing media css end */
+/* accordion faq media css */
+.accordion-header h4 {
+	font-size: 14px !important;
+}
+.faq-button {
+	padding: 18px 15px !important;
+	
+}
+/* testimonial media css */
+.testimonial-text {
+	padding-right: 0px;
+}
+.c-prev {
+	right: 62px;
+}
+.c-prev, .c-next {
+	bottom: -25px;
+    width: 15%;	
+}
+
+/* small sceen sec padding start*/
+.first-row-py, .second-py {
+	padding: 30px 0;
+}
+.features2 {
+	padding: 0px 0;
+}
+.price-x-pad {
+	padding: 0px 0px;
+}
+.app-head{
+    margin-bottom: 40px;
+}
+.app-head h1 {
+	font-size: 36px;
+}
+.accordion-faq {
+	padding: 50px 0;
+}
+/* small sceen sec padding end*/
+
+/* footer media css start */
+.footer {
+	padding: 30px 0;
+}
+.f-social {
+	margin: 10px 0;
+}
+.f-logo {
+	margin: 20px 0;
+}
+.f-social ul li a {
+	font-size: 25px;
+}
+.f-menu ul li a {
+	margin: 0 12px;	
+}
+/* footer media css start */
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+/* banner media css start */
+.banner-caption {
+	padding: 30px 100px;
+    text-align: center;
+}
+.banner-caption h1 {
+	font-size: 36px;
+}
+.banner-faq p {
+	font-size: 14px;
+}
+.banner-img{
+    text-align: center !important;
+}
+/* banner media css end */
+/* brand logo media css start */
+.logo-img {
+	padding: 0px;
+	margin: 20px 20px;
+}
+/* brand logo media css end */
+
+/* jackpot media css start */
+.jackpot-right-text {
+	padding: 35px;
+}
+.jackpot-left-text {
+	width:100%;
+}
+
+.call-to-action {
+    padding: 0 !important;
+}
+.smart-service {
+	text-align: center;
+}
+.f-right-text {
+	margin-top: 50px;
+}
+
+/* choose media css start */
+.choose-item {
+	padding: 0px;
+}
+/* choose media css end */
+
+/* pricing media css start */
+.price-x-pad {
+	padding: 30px 0px;
+}
+.pricing-card .card {
+	margin-top: 30px;
+}
+/* pricing media css end */
+/* accordion faq media css */
+.accordion-header h4 {
+	font-size: 14px !important;
+}
+.faq-button {
+	padding: 18px 15px !important;
+	
+}
+.app-head{
+    margin-bottom: 40px;
+}
+.app-head h1 {
+	font-size: 36px;
+}
+
+/* footer media css start */
+.footer {
+	padding: 30px 0;
+}
+.f-menu ul li a {
+	margin: 0 12px;	
+}
+/* footer media css start */
+
+
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+/* banner media css start */
+.banner-caption {
+	padding-right: 75px;
+}
+.banner-caption h1 {
+	font-size: 36px;
+}
+.banner-faq p {
+	font-size: 14px;
+}
+/* banner media css end */
+/* brand logo media css start */
+.logo-img {
+	padding: 0px;
+	margin: 20px 20px;
+}
+/* brand logo media css end */
+
+/* jackpot media css start */
+.jackpot-right-text {
+	padding: 35px;
+}
+.jackpot-left-text {
+	width:100%;
+}
+
+.call-to-action {
+    padding: 0 !important;
+}
+
+/* choose media css start */
+.choose-item {
+	padding: 0px;
+}
+/* choose media css end */
+
+/* pricing media css start */
+.price-x-pad {
+	padding: 30px 0px;
+}
+/* pricing media css end */
+
+
+
+ }
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+/* banner media css start */
+.banner-caption h1{
+    font-size: 50px;
+}
+/* banner media css end */
+/* smart jackpot media css start */
+.f-right-text {
+	max-width: 430px;
+}
+.ft-content{
+    margin-left: 15px;
+}
+.smart-service{
+    padding:20px;
+}
+/* smart jackpot media css end */
+/* choose us media css start */
+.choose-item{
+    margin-top: 30px;
+    padding: 30px;
+}
+/* choose us media css end */
+/* pricing media css start */
+.price-x-pad{
+    padding: 30px 200px;
+}
+/* pricing media css end */
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+/* banner media css start */
+.banner-caption h1 {
+	font-size:60px;
+}
+/* banner media css end */
+ }

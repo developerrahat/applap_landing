@@ -1,0 +1,613 @@
+/* default css start */
+@font-face {
+    font-family:"Poppins-Regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family:"Poppins-Medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:"Poppins-Bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family:"Poppins-SemiBold";
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+body{
+    font-family:"Poppins-Regular";
+    font-size: 16px;
+    color:#242151;
+}
+a{
+    text-decoration: none;
+}
+.btn:focus{
+    box-shadow: none;
+}
+/* default css eed */
+/* header css start */
+.app-header{
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(255, 255, 255, .5);
+    transition: all .5s ease-in-out;
+}
+.white{
+    padding:20px 0;
+    box-shadow: 0 2px 15px 0px rgba(9, 2, 19, 0.1);
+}
+.app-header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family:"Poppins-Bold";
+    color: #242151 !important;
+}
+.logo span{
+    font-family:"Poppins-Bold";
+    color:#feaa25;
+}
+.header-menu{
+    margin-bottom:0 !important;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-menu ul li{
+    margin: 0 20px;
+}
+.header-menu li a{
+    font-family:"Poppins-Medium";
+    display: inline-block;
+    margin: 0 20px !important;
+    color:#242151 !important;
+    transition: .4s;
+    position: relative;
+}
+.header-menu li a:hover{
+    color: #feaa25 !important;
+}
+.header-menu li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    right: 0;
+    height: 1.5px;
+    background: #f56767;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    transform: scale(0);
+}
+.header-menu li a:hover::after{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+.default-btn{
+    display: inline-block;
+    margin-left: 40px;
+    font-family:"Poppins-Medium";
+    background:#2500f9;
+    padding: 12px 30px;
+    color: #fff !important;
+    border-radius: 30px;
+    position: relative;
+    border: none;
+    z-index: 1;
+}
+.default-btn::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:0;
+  height: 100%;
+  background: #f56767;
+  border-radius: 30px 0 0 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s ease-in-out;
+  z-index: -1;
+}
+.default-btn::before{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width:0;
+  height: 100%;
+  background: #f56767;
+  border-radius:0 30px 30px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: .7s ease-in-out;
+  z-index: -1;
+}
+.default-btn:hover::before{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    border-radius: 30px;
+}
+.default-btn:hover::after{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    border-radius: 30px;
+}
+/* header css end */
+/* header navigation part */
+.btn-bar , .close{
+    cursor: pointer;
+    display:none ;
+    font-size:40px;
+    background: transparent;
+    border: none;
+    color: #feaa25;
+}
+.close{
+    font-size: 65px;
+}
+@media(max-width:991.98px) {
+    /* mobile responsive navigation */
+.btn-bar, .close{
+    display: block;
+}
+.close{
+    position: absolute;
+    right:10px;
+    top: -6px;
+}
+.header-menu{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width:320px;
+    background: #ffffff;
+    transition: 1s all ease-in-out;
+    display: none;
+}
+.header-menu li{  
+    width: 100%;
+    margin: 6px 0;
+}
+.default-btn {
+    margin-top: 30px;
+	margin-left:0;
+	
+}
+    
+}
+
+/* banner css start */
+.banner-area{
+    background: url(../imgs/hero-bg.png) no-repeat center center;
+    background-size:cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: repeat-x;
+    animation: bannerAnimate 15s linear infinite;
+}
+@keyframes bannerAnimate{
+    0%{
+        background-position: 100px;
+    }
+    100%{
+        background-position:1600px;
+    }
+}
+.banner-caption{
+    padding-right: 100px;
+}
+.banner-faq{
+    display: inline-block;
+    background:#ebf4f7;
+    padding:5px 20px;
+    padding-left: 5px;
+    border-radius: 30px;
+}
+.banner-faq p{
+    font-family:"Poppins-SemiBold";
+    margin-bottom: 0;
+    color: #000000 !important;
+    
+}
+.banner-faq p span{
+    margin-right: 10px;
+}
+.banner-caption h1 {
+	margin: 20px 0;
+	font-family: "Poppins-SemiBold";
+	font-size: 40px;
+}
+.banner-caption p{
+    color:#616368;
+    line-height: 30px;
+}
+.banner-custom-btn{
+    margin-top: 20px;
+    margin-left: 0;
+}
+.banner-btn{
+    padding: 0;
+    margin: 10px;
+    margin-top: 30px;
+    color:#2500f9 !important;
+}
+.banner-btn:hover{
+  text-decoration: underline;
+}
+.banner-img img {
+	width: 100%;
+	max-width: 350px;
+}
+
+/* banner css end */
+
+/* brand logo css start */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+	display: none;
+}
+.brand-logo{
+    padding: 70px 0;
+    text-align: center;
+}
+.brand-title{
+  margin-bottom: 50px;
+}
+.logo-img{
+    padding:20px;
+    margin: 20px 35px;
+}
+/* brand logo css end */
+
+/* feature css start */
+.features{}
+.feature-img img{
+    animation:featureImgAnimate 3s ease-in-out infinite;
+}
+@keyframes featureImgAnimate{
+    0%{
+        transform: translateX(15px);
+    }
+    50%{
+        transform: translateX(-5px);
+    }
+    100%{
+        transform: translateX(15px);
+    }
+}
+.f-right-text {
+	max-width: 420px;
+}
+.default-title{
+    font-family:"Poppins-SemiBold";
+    font-size: 36px;
+}
+.default-para{
+    margin: 30px 0;
+}
+.feature-timeline{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.ft-tmg {
+	margin-right: 15px;
+	width:200px;
+	text-align: center;
+}
+.ft-content {
+	margin-left: 0;
+}
+.ft-content h3{
+    font-family:"Poppins-SemiBold";
+    font-size: 20px;
+    color: #f56767;
+}
+.ft-content p{
+    line-height: 26px;
+}
+.blue{
+    color: #2500f9 !important;
+}
+.green{
+    color: #40975f !important;
+}
+/* feature css end */
+
+/* jackpot smart css start */
+.first-row-py, .second-py{
+    padding: 60px 0;
+}
+.jackpot-left-text{
+    width: 400px;
+}
+.jackpot-left-text h1{
+    font-family:"Poppins-Bold";
+    font-size: 36px;
+    line-height: 60px;
+}
+.jackpot-right-text{
+    border-left: 1px solid #cccccc;
+    padding: 60px;
+}
+.smart-service {
+	padding: 20px 0px;
+}
+.smart-img{
+    margin-bottom: 25px;
+}
+
+/* jackpot smart css end */
+/* choose us css start*/
+.choose-us{
+    padding: 80px 0;
+}
+.choose-item {
+	margin-top: 30px;
+	padding: 24px;
+}
+/* choose us css end*/
+
+/* feature2 css start */
+.features2{
+    padding: 80px 0;
+}
+/* feature2 css end */
+/* pricing csss start */
+.price-x-pad {
+	padding: 30px 160px;
+}
+.pricing-card .card{
+    padding: 80px 40px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 40px 20px rgba(2, 2, 8, .1);
+}
+.form-check {
+    float: inherit;
+	width: 20px !important;
+    text-align: center;
+    margin: auto;
+}
+.p-title{
+    font-family:"Poppins-Bold";
+    font-size: 36px;
+}
+.p-title span{
+    font-family:"Poppins-Regular";
+    font-size: 16px;
+
+}
+.sub-title{
+    font-family:"Poppins-Bold";
+    font-size: 20px;
+
+}
+.pricing-list-item{
+    margin-top: 40px;
+}
+.pricing-list-item ul li{
+    margin: 12px 0;
+    color: #616368;
+}
+/* pricing csss end */
+
+/* testimonial css start */
+.testimonials{
+    padding: 80px 0;
+    /* background: #242151; */
+}
+.testimonial-text{
+    padding-right: 60px;
+}
+.rating{
+    margin-bottom: 25px;
+}
+.rating span i{
+    color:#f56767;
+}
+.testimonial-text h4{
+    font-family:"Poppins-Bold";
+    font-size: 20px;
+}
+.testimonial-text p{
+    margin: 25px 0;
+    color: #616368;
+    line-height: 30px;
+}
+.t-bio{
+    float: left;
+    margin-right: 15px;
+}
+.t-content{
+    position: relative;
+    top: 15px;
+}
+.t-content h5{
+    font-family:"Poppins-Bold";
+    font-size: 20px;
+}
+.c-prev, .c-next {
+	top: auto;
+	bottom: 0;
+    width: 5%;
+}
+.c-prev {
+    left: auto;
+	right:80px;
+}
+.c-prev-icon, .c-next-icon{
+	background-image: none;
+}
+.c-prev-icon::after{
+	content: "\f0a8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 20px;
+    background: #ebf4f7;
+    padding: 10px;
+    color: #242151;
+    border-radius: 50%;
+}
+.c-next-icon::after{
+	content: "\f0a9";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    font-size: 20px;
+    background: #ebf4f7;
+    padding: 10px;
+    color: #242151;
+    border-radius: 50%;
+}
+/* testimonial css end */
+
+/* accordion faq css start */
+.accordion-faq{
+    padding:100px 0;
+}
+
+.faq-item{
+    background: aliceblue;
+	border: none;
+}
+.faq-button{
+    margin: 10px 0;
+    padding: 30px 35px !important;
+    background: aliceblue;
+    border: none;
+}
+.faq-button:focus {
+	border: none;
+    box-shadow: none;
+
+}
+.faq-button:not(.collapsed)::after {
+	background-image: none;
+    content: "\f068";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+
+}
+.faq-button::after{
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    background-image: none;
+
+  
+}
+.accordion-header h4{
+    font-family:"Poppins-Bold";
+   color: #242151;
+   font-size: 18px !important;
+}
+.accordion-body {
+	padding: 30px 35px;
+    line-height: 30px;
+}
+/* accordion faq css end */
+/* footer top css start */
+.apps{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #b4affd;
+}
+.app-head h1{
+    font-family:"Poppins-Bold";
+    font-size: 50px;
+}
+.googles a img{
+    margin-top: 20px;
+}
+/* footer top css end */
+
+/* footer start */
+.footer{
+    padding: 80px 0;
+    background: #242151;
+    text-align: center;
+}
+.f-logo{
+    margin:50px 0;
+}
+.f-logo h2{
+    font-family:"Poppins-Bold";
+    color: #fff;
+}
+.f-logo h2 span{
+    color: #feaa25;
+}
+.f-menu ul li a{
+    color:#fff;
+    margin: 0 15px;
+    transition: .4s;
+}
+.f-menu ul li a:hover{
+   color: #feaa25 !important;
+}
+.f-social{
+    margin: 40px 0;
+}
+.f-social ul li a{
+    display: inline-block;
+    font-size:35px;
+    margin: 10px 10px;
+    color: #ddd;
+}
+.copyright p{
+    color: #ddd;
+}
+/* footer end */
+
+.totop {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    cursor: pointer;
+    display: none;
+    background: #ff7214;
+    color: #fff;
+    border-radius: 25px 0 25px 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size:25px;
+    transition: .4s;
+    animation: animate 2s  ease-in-out infinite;
+    z-index: 999;
+  }
+.totop:hover{
+   background: darkblue;
+  }
+
+  @keyframes animate {
+      0%{
+          transform: translateY(10px);
+      }
+
+     50%{
+          transform: translateY(-5px);
+      }
+     100%{
+          transform: translateY(10px);
+      }
+  }
